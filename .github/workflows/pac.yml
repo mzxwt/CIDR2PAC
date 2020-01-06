@@ -27,10 +27,8 @@ jobs:
       env:
         CI: true
         
-    - name: Prepare artifact
-      run: rm -rf {./CIDR2PAC/whitelist.pac}
     - name: Upload artifact
       uses: actions/upload-artifact@master
       with:
         name: whitelist
-        path: ./CIDR2PAC/
+        path: ./CIDR2PAC/whitelist.pac
