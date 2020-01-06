@@ -28,7 +28,7 @@ jobs:
         CI: true
         
     - name: Prepare artifact
-      run: find ./CIDR2PAC/ -name "whitelist.pac" | xargs rm -rf {}
+      run: rm -rf {./CIDR2PAC/whitelist.pac}
     - name: Upload artifact
       uses: actions/upload-artifact@master
       with:
