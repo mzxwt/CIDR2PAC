@@ -8544,6 +8544,6 @@ function FindProxyForURL(url, host) {
   if (isInside(host)) {
     return 'DIRECT';
   } else {
-    return 'SOCKS5 localhost:1080';
+    return 'SOCKS localhost:1080';
   }
 }
