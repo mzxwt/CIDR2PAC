@@ -5,7 +5,7 @@ const package = require('./package.json')
 const CIDR_PATH = './cn-aggregated.zone.txt';
 const TEMPLATE_PAC_PATH = './whitelist_template.pac';
 const DIST_PAC_PATH = './whitelist.pac';
-const PROXY = 'SOCKS localhost:1080';
+const PROXY = 'SOCKS localhost:1080; SOCKS5 localhost:1080;';
 
 const cidrsFile = fs.readFileSync(CIDR_PATH);
 const cidrs = cidrsFile.toString().split(/\n|\r\n/);
