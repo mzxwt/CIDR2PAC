@@ -32,3 +32,7 @@ jobs:
       with:
         name: whitelist
         path: ./CIDR2PAC/whitelist.pac
+        
+    name: Release artifact
+    env:
+      ASSET_PATH: ./CIDR2PAC/whitelist.pac
