@@ -37,4 +37,4 @@ jobs:
       uses: mzxwt/action-release@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ASSET_PATH: CIDR2PAC
+        ASSET_PATH: ./CIDR2PAC/whitelist.pac
