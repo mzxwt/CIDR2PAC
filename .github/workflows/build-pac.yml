@@ -32,3 +32,9 @@ jobs:
       with:
         name: whitelist
         path: ./CIDR2PAC/whitelist.pac
+        
+    - name: Release dat files
+      uses: mzxwt/action-release@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ASSET_PATH: CIDR2PAC
